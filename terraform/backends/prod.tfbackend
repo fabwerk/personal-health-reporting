@@ -1,0 +1,2 @@
+bucket = "wl-health-prod-tfstate"
+prefix = "terraform/state"

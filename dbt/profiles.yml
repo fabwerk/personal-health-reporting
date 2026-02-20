@@ -1,0 +1,15 @@
+wl_health:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: wl-health-dev
+      dataset: staging
+      location: EU
+    prod:
+      type: bigquery
+      method: service-account
+      project: wl-health-prod
+      dataset: staging
+      location: EU
