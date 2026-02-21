@@ -1,8 +1,11 @@
 """Cloud Function entry point for API ingestion using dlt."""
 
-import dlt
+import os
+
 import functions_framework
-from google.cloud import storage
+
+ENVIRONMENT = os.environ.get("ENVIRONMENT", "dev")
+GCP_PROJECT_ID = os.environ.get("GCP_PROJECT_ID", f"wl-health-{ENVIRONMENT}")
 
 
 @functions_framework.http

@@ -13,10 +13,6 @@ dependencies = [
     "google-cloud-bigquery",
     "google-cloud-storage",
     "google-cloud-functions",
-]
-
-[project.optional-dependencies]
-dev = [
     "pytest",
     "ruff",
 ]

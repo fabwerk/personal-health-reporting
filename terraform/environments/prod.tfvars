@@ -1,3 +1,3 @@
 project_id = "wl-health-prod"
-region     = "europe-west1"
+region     = "us-central1"
 env        = "prod"

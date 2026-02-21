@@ -2217,10 +2217,6 @@ dependencies = [
     { name = "google-cloud-bigquery" },
     { name = "google-cloud-functions" },
     { name = "google-cloud-storage" },
-]
-
-[package.optional-dependencies]
-dev = [
     { name = "pytest" },
     { name = "ruff" },
 ]
@@ -2236,10 +2232,9 @@ requires-dist = [
     { name = "google-cloud-bigquery" },
     { name = "google-cloud-functions" },
     { name = "google-cloud-storage" },
-    { name = "pytest", marker = "extra == 'dev'" },
-    { name = "ruff", marker = "extra == 'dev'" },
+    { name = "pytest" },
+    { name = "ruff" },
 ]
-provides-extras = ["dev"]
 
 [[package]]
 name = "platformdirs"

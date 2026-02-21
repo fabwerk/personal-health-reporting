@@ -6,10 +6,10 @@ wl_health:
       method: oauth
       project: wl-health-dev
       dataset: staging
-      location: EU
+      location: US
     prod:
       type: bigquery
       method: service-account
       project: wl-health-prod
       dataset: staging
-      location: EU
+      location: US
